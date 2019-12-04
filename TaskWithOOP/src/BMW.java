@@ -1,5 +1,5 @@
-public class BMW extends Auto {
-    private int transmission;
+public class BMW extends Auto /*created class BMW that inherits from Auto*/ {
+    private int transmission; //set for the BMW class only its int transmission
     public BMW(int speed, String color, int durability , int transmission) {
         super(speed, color, durability);
         this.transmission = transmission;
@@ -15,7 +15,7 @@ public class BMW extends Auto {
     }
 
     @Override
-    public void fix(int precentOfRepare) {
+    public void fix(int precentOfRepare) { //Auto parent methods are used
         for(int i = precentOfRepare; i < 81;i++) {
             System.out.println("Fixing percent: "+i);
         }
